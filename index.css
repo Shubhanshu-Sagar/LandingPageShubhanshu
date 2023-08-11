@@ -1,8 +1,11 @@
+
 body {
     background: #121212;
     margin: 0;
+    
     overflow: hidden;
   }
+  
   
   @keyframes fadeIn {
       from {opacity: 0;}
@@ -19,89 +22,19 @@ body {
       to {opacity: 0;}
   }
   
-  p {
+ p {
     position: absolute;
     top: 10px;
     left: 12px;
     color: white;
-    opacity: 0;
+    /* opacity: 0; */
     font-family: "Source Sans Pro";
-    animation: fadeIn 2s ease-out, chill 2s 2s, fadeOut 2s 4s;
+    animation: fadeIn 1s ease-out, chill 1s 1s, fadeOut 1s 1s;
+    animation-iteration-count:  infinite;
   }
+ 
   
-  
-  
-  /* // Twitter */
-  .twitter {
-    &:hover {
-      a {
-        transform: rotate(-45deg) scale(1.05);
-      }
-      
-      i {
-        color: lighten(#00ACED, 10%);
-      }
-    }
-    
-    a {
-      bottom: -40px;
-      right: -75px;
-      transform: rotate(-45deg);
-    }
-    
-    i {
-      bottom: 7px;
-      right: 7px;
-      color: #00ACED;
-    }
-  }
-  
-  .social-icon {
-    a {
-      position: absolute;
-      background: white;
-      color: white;
-      box-shadow: -1px -1px 20px 0px rgba(0,0,0,0.30);
-      display: inline-block;
-      width: 150px;
-      height: 80px;  
-      transform-origin: 50% 50%;
-      transition: .15s ease-out;
-    }
-    
-    i {
-      position: absolute;
-      pointer-events: none;
-      z-index: 1000;
-      transition: .15s ease-out;
-    }
-  }
-  
-  /* // YouTube  */
-  
-  .youtube {
-    &:hover {
-      a {
-        transform: rotate(45deg) scale(1.05);
-      }
-      
-      i {
-        color: lighten(#E62117, 10%);
-      }
-    }
-    
-    a {
-      bottom: -40px;
-      left: -75px;
-      transform: rotate(45deg);
-    }
-    
-    i {
-      bottom: 7px;
-      left: 7px;
-      color: #E62117;
-    }
-  }
+ 
   .myh1{
     
     position: absolute;
@@ -115,4 +48,17 @@ body {
     font-family: 'Russo One', sans-serif;
     letter-spacing: 3px;
   }
-  
+
+  .aboutmepara{
+    position: absolute;
+    top: 60%;
+    
+    left: 30%;
+    
+    color: white;
+    /* opacity: 100; */
+    font-size: 17px;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 3px;
+
+  }
